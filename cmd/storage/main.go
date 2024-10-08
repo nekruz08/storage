@@ -9,9 +9,17 @@ import (
 
 func main() {
 	st := storage.NewStorage()
+
 	file,err:=st.Upload("text.txt",[]byte("hello"))
 	if err != nil {
 		log.Fatal(err)
 	}
-	fmt.Println("it uploaded", file)
+	restoredFile,err:=st.GetByID(file.ID)
+	if err != nil {
+		log.Fatal(err)
+	}
+
+	// fmt.Println(st.)
+
+	fmt.Println("it is restored", restoredFile)
 }

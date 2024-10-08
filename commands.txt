@@ -1,0 +1,5 @@
+go get github.com/google/uuid
+
+git remote add origin https://github.com/nekruz08/storage.git
+git branch -M master
+git push -u origin master

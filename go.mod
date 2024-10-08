@@ -1,4 +1,4 @@
-module github.com/nekruz08/storage
+module github.com/nekruz08/storage/v2
 
 go 1.22.7
 
